@@ -1,0 +1,118 @@
+/* General body styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, rgb(0, 158, 158), rgb(0, 56, 56));
+  color: rgb(128, 201, 201);
+  text-align: center;
+  min-height: 100vh;
+}
+
+/* Container for the entire app */
+form,
+#quiz,
+#result {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #222;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: none;
+}
+
+form {
+  display: block;
+}
+
+/* Headings */
+h1,
+h2 {
+  color: rgb(1, 57, 57);
+}
+
+/* Labels */
+label {
+  display: block;
+  margin: 15px 0 5px;
+  font-size: 16px;
+  text-align: left;
+}
+
+/* Inputs and selects */
+input[type="number"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(0, 127, 127);
+  font-size: 16px;
+  background-color: rgb(154, 222, 222);
+}
+
+/* Multi-select dropdown */
+select[multiple] {
+  height: auto;
+}
+
+/* Buttons */
+button {
+  background-color: rgb(0, 120, 120);
+  border: none;
+  color: #222;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: aqua;
+}
+
+button:disabled {
+  background-color: rgb(0, 58, 58);
+  cursor: not-allowed;
+}
+
+/* Question styling */
+.question {
+  margin: 20px 0;
+  padding: 15px;
+  background-color: rgb(0, 58, 58);
+  border-radius: 8px;
+}
+
+.question p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Answer buttons */
+.question button {
+  width: 100%;
+  margin: 5px 0;
+  padding: 10px;
+  text-align: left;
+  background-color: rgb(0, 50, 50);
+  color: rgb(128, 201, 201);
+  border: 1px solid rgb(0, 68, 68);
+}
+
+.question button:hover {
+  background-color: rgb(0, 93, 93);
+}
+
+#result h2 {
+  font-size: 24px;
+  color: rgb(0, 129, 129);
+}
+
+#result p {
+  font-size: 18px;
+  margin: 20px 0;
+}
