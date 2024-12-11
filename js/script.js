@@ -6,7 +6,7 @@ let sessionToken = null; // To store the session token
 const settings = document.querySelector("form");
 const quizContainer = document.querySelector("#quiz");
 const resultContainer = document.querySelector("#result");
-const categorySelect = document.querySelector("#category"); //används längre ner?
+const categorySelect = document.querySelector("#category");
 
 let quizData = [];
 let score = 0;
@@ -43,7 +43,7 @@ async function resetSessionToken() {
 settings.addEventListener("submit", async (event) => {
   event.preventDefault();
   const questionCount = document.querySelector("#questionCount").value;
-  const category = document.querySelector("#category").value;
+  const category = categorySelect.value;
   const difficulty = document.querySelector("#difficulty").value;
 
   const response = await fetch(
